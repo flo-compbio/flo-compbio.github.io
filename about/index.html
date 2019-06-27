@@ -60,7 +60,7 @@
   <div class="entry">
     <h3 id="about-me">About me</h3>
 
-<p>I’m a computational biologist and Postdoctoral Fellow in <a href="https://yanailab.org/">Dr. Itai Yanai’s lab</a> at NYU School of Medicine. My main research interest lies in developing and applying computational and statistical tools to help improve our understanding of gene regulatory processes. My current research focuses on the development of computational methods for the efficient analysis of single-cell RNA-Seq data. As part of this research, I have recently developed <em>k-nearest neighbor smoothing</em> <a href="https://www.biorxiv.org/content/early/2018/04/09/217737.article-metrics">(Wagner et al., 2018)</a>, a new method for reducing the high levels of technical noise characteristic of high-throughput scRNA-Seq data.</p>
+<p>I’m a computational biologist and Postdoctoral Fellow in <a href="https://yanailab.org/">Dr. Itai Yanai’s lab</a> at NYU School of Medicine. My main research interest lies in developing and applying computational and statistical tools to help improve our understanding of gene regulatory processes. My current research focuses on the development of machine learning approaches for the analysis of single-cell RNA-Seq data. As part of this research, I have recently developed <a href="https://www.biorxiv.org/content/10.1101/655365v2"><em>ENHANCE</em> (Wagner et al., 2019)</a>, an algorithm that accurately removes technical noise from heterogeneous single-cell RNA-Seq datasets, and <a href="https://www.biorxiv.org/content/10.1101/456129v1"><em>Moana</em> (Wagner and Yanai, 2018)</a>, a robust and scalable cell type classification framework for single-cell RNA-Seq data.</p>
 
 <p>In 2017, I received my PhD in Computational Biology and Bioinformatics from Duke University. As part of my dissertation work, I developed <a href="https://github.com/flo-compbio/gopca">GO-PCA (Wagner, 2015)</a>, a new method for systematic exploratory analysis of RNA-Seq data. In the past, I have also been involved in a project studying the development of the nematode C. elegans using microarray expression analysis of precisely staged embryos <a href="https://www.ncbi.nlm.nih.gov/pubmed/22560298">(Levin et al., 2012)</a>, and in the development of <a href="https://www.ncbi.nlm.nih.gov/pubmed/22939981">CEL-Seq (Hashimshony et al., 2012)</a>, an experimental method for linear amplification and high-throughput sequencing of mRNA from single cells.</p>
 
@@ -73,8 +73,8 @@
 <h3 id="software">Software</h3>
 
 <ul>
+  <li><a href="https://github.com/yanailab/enhance">ENHANCE</a></li>
   <li><a href="https://github.com/flo-compbio/go-pca">GO-PCA</a></li>
-  <li><a href="https://github.com/yanailab/knn-smoothing">kNN-smoothing</a></li>
 </ul>
 
 <h3 id="publications">Publications</h3>
@@ -207,7 +207,88 @@ function toggleDiv(id) {
 
 <h4 id="preprints">Preprints</h4>
 
-<ol class="bibliography"><li><span id="wagner_k-nearest_2018">Wagner, F., Yan, Y., &amp; Yanai, I. (2018). K-nearest neighbor smoothing for high-throughput single-cell RNA-Seq data. <i>BioRxiv</i>, 217737. https://doi.org/10.1101/217737</span>
+<ol class="bibliography"><li><span id="wagner_accurate_2019">Wagner, F., Barkley, D., &amp; Yanai, I. (2019). Accurate denoising of single-cell RNA-Seq data using unbiased principal component analysis. <i>BioRxiv</i>, 655365. https://doi.org/10.1101/655365</span>
+
+<script type="text/javascript">
+function toggleDiv(id) {
+	var div = document.getElementById(id);
+	div.style.display = div.style.display == "none" ? "block" : "none";
+}
+</script>
+
+<div id="wagner_accurate_2019-materials">
+<ul class="nav nav-pills">
+
+<li><a data-toggle="collapse" href="javascript:toggleDiv('wagner_accurate_2019-bibtex')">BibTeX</a></li>
+<div id="wagner_accurate_2019-bibtex" style="display:none;">
+<pre class="collapse">@article{wagner_accurate_2019,
+  title = {Accurate denoising of single-cell {RNA}-{Seq} data using unbiased principal component analysis},
+  copyright = {© 2019, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution 4.0 International), CC BY 4.0, as described at http://creativecommons.org/licenses/by/4.0/},
+  url = {https://www.biorxiv.org/content/10.1101/655365v2},
+  doi = {10.1101/655365},
+  language = {en},
+  urldate = {2019-06-27},
+  journal = {bioRxiv},
+  author = {Wagner, Florian and Barkley, Dalia and Yanai, Itai},
+  month = jun,
+  year = {2019},
+  pages = {655365},
+  file = {Full Text PDF:/home/flo/Zotero/storage/HRVLGMXM/Wagner et al. - 2019 - Accurate denoising of single-cell RNA-Seq data usi.pdf:application/pdf;Snapshot:/home/flo/Zotero/storage/R4MLWAEA/655365v2.html:text/html}
+}
+</pre>
+</div>
+
+
+
+<li>DOI: <a href="https://dx.doi.org/10.1101/655365">10.1101/655365</a></li>
+
+</ul>
+<br />
+
+</div>
+</li>
+<li><span id="wagner_moana:_2018">Wagner, F., &amp; Yanai, I. (2018). Moana: A robust and scalable cell type classification framework for single-cell RNA-Seq data. <i>BioRxiv</i>, 456129. https://doi.org/10.1101/456129</span>
+
+<script type="text/javascript">
+function toggleDiv(id) {
+	var div = document.getElementById(id);
+	div.style.display = div.style.display == "none" ? "block" : "none";
+}
+</script>
+
+<div id="wagner_moana:_2018-materials">
+<ul class="nav nav-pills">
+
+<li><a data-toggle="collapse" href="javascript:toggleDiv('wagner_moana:_2018-bibtex')">BibTeX</a></li>
+<div id="wagner_moana:_2018-bibtex" style="display:none;">
+<pre class="collapse">@article{wagner_moana:_2018,
+  title = {Moana: {A} robust and scalable cell type classification framework for single-cell {RNA}-{Seq} data},
+  copyright = {© 2018, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution 4.0 International), CC BY 4.0, as described at http://creativecommons.org/licenses/by/4.0/},
+  shorttitle = {Moana},
+  url = {https://www.biorxiv.org/content/10.1101/456129v1},
+  doi = {10.1101/456129},
+  language = {en},
+  urldate = {2019-06-27},
+  journal = {bioRxiv},
+  author = {Wagner, Florian and Yanai, Itai},
+  month = oct,
+  year = {2018},
+  pages = {456129},
+  file = {Full Text PDF:/home/flo/Zotero/storage/77YSVXI9/Wagner and Yanai - 2018 - Moana A robust and scalable cell type classificat.pdf:application/pdf;Snapshot:/home/flo/Zotero/storage/TBDW9V8W/456129v1.html:text/html}
+}
+</pre>
+</div>
+
+
+
+<li>DOI: <a href="https://dx.doi.org/10.1101/456129">10.1101/456129</a></li>
+
+</ul>
+<br />
+
+</div>
+</li>
+<li><span id="wagner_k-nearest_2018">Wagner, F., Yan, Y., &amp; Yanai, I. (2018). K-nearest neighbor smoothing for high-throughput single-cell RNA-Seq data. <i>BioRxiv</i>, 217737. https://doi.org/10.1101/217737</span>
 
 <script type="text/javascript">
 function toggleDiv(id) {
