@@ -37,6 +37,7 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <link rel="canonical" href="https://florianwagner.eu/" />
     <link rel="stylesheet" type="text/css" href="/style.css"/>
     <link rel="alternate" type="application/rss+xml" title="Florian Wagner, PhD - Computational biology and single-cell RNA-Seq" href="/feed.xml" />
 
@@ -55,11 +56,11 @@
           </div>
 
           <nav>
- 	    <a href="/blog">Blog</a>
 	    <!--<a href="/projects">Projects</a>-->
 	    <!--<a href="/publications">Publications</a>-->
-            <a href="/talks">Talks</a>
             <a href="/">About</a>
+            <a href="/videos">Videos</a>
+ 	    <a href="/blog">Blog</a>
 	    <!--<a href="/about">Contact</a>-->
           </nav>
         </header>
@@ -72,154 +73,106 @@
   <h1>About</h1>
 
   <div class="entry">
-    <p>I’m a computational biologist whose main research interest lies in developing and applying computational and statistical tools to help improve our understanding of gene regulatory processes. My current research focuses on the development of machine learning approaches for the analysis of single-cell RNA-Seq data. As part of this research, I have recently developed <a href="https://www.biorxiv.org/content/10.1101/655365v2"><em>ENHANCE</em> (Wagner et al., 2019)</a>, an algorithm that accurately removes technical noise from heterogeneous single-cell RNA-Seq datasets, and <a href="https://www.biorxiv.org/content/10.1101/456129v1"><em>Moana</em> (Wagner and Yanai, 2018)</a>, a robust and scalable cell type classification framework for single-cell RNA-Seq data.</p>
+    <p>I’m a computational biologist whose main research interest lies in developing and applying computational and statistical tools to help improve our understanding of gene regulatory processes. My current research focuses on the development of machine learning approaches for the analysis of single-cell RNA-Seq (scRNA-Seq) data. As part of this research, I have recently developed <a href="https://www.biorxiv.org/content/10.1101/655365v2"><em>ENHANCE</em> (Wagner et al., 2019)</a>, an algorithm that accurately removes technical noise from scRNA-Seq datasets, <a href="https://www.biorxiv.org/content/10.1101/770388v3"><em>Galapagos</em> (Wagner, 2019)</a>, a straightforward clustering approach for scRNA-Seq data, and <a href="https://www.biorxiv.org/content/10.1101/2020.06.08.140673v2"><em>Monet</em> (Wagner, 2020)</a>, an open-source Python package for analyzing scRNA-Seq data, which contains implementations of these methods.</p>
 
-<p>In 2017, I received my PhD in Computational Biology and Bioinformatics from Duke University. As part of my dissertation work, I developed <a href="https://github.com/flo-compbio/gopca">GO-PCA (Wagner, 2015)</a>, a new method for systematic exploratory analysis of RNA-Seq data. In the past, I have also been involved in a project studying the development of the nematode C. elegans using microarray expression analysis of precisely staged embryos <a href="https://www.ncbi.nlm.nih.gov/pubmed/22560298">(Levin et al., 2012)</a>, and in the development of <a href="https://www.ncbi.nlm.nih.gov/pubmed/22939981">CEL-Seq (Hashimshony et al., 2012)</a>, an experimental method for linear amplification and high-throughput sequencing of mRNA from single cells.</p>
+<p>In 2017, I received my PhD in Computational Biology and Bioinformatics from Duke University. As part of my dissertation work, I developed <a href="https://github.com/flo-compbio/gopca">GO-PCA (Wagner, 2015)</a>, a new method for systematic exploratory analysis of RNA-Seq data using prior knowledge. In the past, I have also been involved in a project studying the development of the nematode C. elegans using microarray expression analysis of precisely staged embryos <a href="https://www.ncbi.nlm.nih.gov/pubmed/22560298">(Levin et al., 2012)</a>, and in the development of <a href="https://www.ncbi.nlm.nih.gov/pubmed/22939981">CEL-Seq (Hashimshony et al., 2012)</a>, an experimental method for linear amplification and high-throughput sequencing of mRNA from single cells.</p>
 
 <p>What I enjoy most about doing research is learning new things all the time, thinking critically, being creative, solving technical challenges, and working collaboratively.</p>
 
 <h3 id="contact">Contact</h3>
 
-<p><a href="mailto:florian.compbio@gmail.com">florian.compbio@gmail.com</a></p>
+<p><a href="mailto:florian.wagner@uchicago.edu">florian.wagner@uchicago.edu</a></p>
 
 <h3 id="software">Software</h3>
 
 <ul>
-  <li><a href="https://github.com/yanailab/enhance">ENHANCE</a></li>
-  <li><a href="https://github.com/flo-compbio/go-pca">GO-PCA</a></li>
+  <li><a href="https://github.com/flo-compbio/monet">Monet</a>: An open-source Python package for analyzing and integrating scRNA-Seq data using PCA-based latent spaces (contains implementation of ENHANCE)</li>
+  <li><a href="https://github.com/yanailab/enhance">ENHANCE</a>: Accurate denoising of single-cell RNA-Seq data (stand-alone Python/R implementations)</li>
+  <li><a href="https://github.com/flo-compbio/go-pca">GO-PCA</a>: An Unsupervised Method to Explore Gene Expression Data Using Prior Knowledge</li>
 </ul>
 
 <h3 id="publications">Publications</h3>
 
-<h4 id="peer-reviewed-research">Peer-reviewed research</h4>
-
-<ol class="bibliography"><li><span id="wagner_go-pca:_2015">Wagner, F. (2015). GO-PCA: An Unsupervised Method to Explore Gene Expression Data Using Prior Knowledge. <i>PloS One</i>, <i>10</i>(11), e0143196. https://doi.org/10.1371/journal.pone.0143196</span>
-
-<script type="text/javascript">
-function toggleDiv(id) {
-	var div = document.getElementById(id);
-	div.style.display = div.style.display == "none" ? "block" : "none";
-}
-</script>
-
-<div id="wagner_go-pca:_2015-materials">
-<ul class="nav nav-pills">
-
-<li><a data-toggle="collapse" href="javascript:toggleDiv('wagner_go-pca:_2015-bibtex')">BibTeX</a></li>
-<div id="wagner_go-pca:_2015-bibtex" style="display:none;">
-<pre class="collapse">@article{wagner_go-pca:_2015,
-  title = {{GO}-{PCA}: An Unsupervised Method to Explore Gene Expression Data Using Prior Knowledge},
-  volume = {10},
-  issn = {1932-6203},
-  doi = {10.1371/journal.pone.0143196},
-  shorttitle = {{GO}-{PCA}},
-  pages = {e0143196},
-  number = {11},
-  journaltitle = {{PloS} One},
-  shortjournal = {{PLoS} {ONE}},
-  author = {Wagner, Florian},
-  date = {2015},
-  pmid = {26575370}
-}
-</pre>
-</div>
-
-
-
-<li>DOI: <a href="https://dx.doi.org/10.1371/journal.pone.0143196">10.1371/journal.pone.0143196</a></li>
-
-</ul>
-<br />
-
-</div>
-</li>
-<li><span id="hashimshony_cel-seq:_2012">Hashimshony, T., Wagner, F., Sher, N., &amp; Yanai, I. (2012). CEL-Seq: single-cell RNA-Seq by multiplexed linear amplification. <i>Cell Reports</i>, <i>2</i>(3), 666–673. https://doi.org/10.1016/j.celrep.2012.08.003</span>
-
-<script type="text/javascript">
-function toggleDiv(id) {
-	var div = document.getElementById(id);
-	div.style.display = div.style.display == "none" ? "block" : "none";
-}
-</script>
-
-<div id="hashimshony_cel-seq:_2012-materials">
-<ul class="nav nav-pills">
-
-<li><a data-toggle="collapse" href="javascript:toggleDiv('hashimshony_cel-seq:_2012-bibtex')">BibTeX</a></li>
-<div id="hashimshony_cel-seq:_2012-bibtex" style="display:none;">
-<pre class="collapse">@article{hashimshony_cel-seq:_2012,
-  title = {{CEL}-Seq: single-cell {RNA}-Seq by multiplexed linear amplification},
-  volume = {2},
-  issn = {2211-1247},
-  url = {http://www.ncbi.nlm.nih.gov/pubmed/22939981},
-  doi = {10.1016/j.celrep.2012.08.003},
-  shorttitle = {{CEL}-Seq},
-  pages = {666--673},
-  number = {3},
-  journaltitle = {Cell Reports},
-  shortjournal = {Cell Rep},
-  author = {Hashimshony, Tamar and Wagner, Florian and Sher, Noa and Yanai, Itai},
-  date = {2012-09-27},
-  pmid = {22939981},
-  keywords = {Reverse Transcriptase Polymerase Chain Reaction, {RNA}, Messenger, Sequence Analysis, {DNA}, Gene Expression Regulation, Caenorhabditis elegans, Multiplex Polymerase Chain Reaction, Animals, {RNA}, Helminth}
-}
-</pre>
-</div>
-
-
-
-<li>DOI: <a href="https://dx.doi.org/10.1016/j.celrep.2012.08.003">10.1016/j.celrep.2012.08.003</a></li>
-
-</ul>
-<br />
-
-</div>
-</li>
-<li><span id="levin_developmental_2012">Levin, M., Hashimshony, T., Wagner, F., &amp; Yanai, I. (2012). Developmental milestones punctuate gene expression in the Caenorhabditis embryo. <i>Developmental Cell</i>, <i>22</i>(5), 1101–1108. https://doi.org/10.1016/j.devcel.2012.04.004</span>
-
-<script type="text/javascript">
-function toggleDiv(id) {
-	var div = document.getElementById(id);
-	div.style.display = div.style.display == "none" ? "block" : "none";
-}
-</script>
-
-<div id="levin_developmental_2012-materials">
-<ul class="nav nav-pills">
-
-<li><a data-toggle="collapse" href="javascript:toggleDiv('levin_developmental_2012-bibtex')">BibTeX</a></li>
-<div id="levin_developmental_2012-bibtex" style="display:none;">
-<pre class="collapse">@article{levin_developmental_2012,
-  title = {Developmental milestones punctuate gene expression in the Caenorhabditis embryo},
-  volume = {22},
-  issn = {1878-1551},
-  url = {http://www.ncbi.nlm.nih.gov/pubmed/22560298},
-  doi = {10.1016/j.devcel.2012.04.004},
-  pages = {1101--1108},
-  number = {5},
-  journaltitle = {Developmental cell},
-  shortjournal = {Dev. Cell},
-  author = {Levin, Michal and Hashimshony, Tamar and Wagner, Florian and Yanai, Itai},
-  urldate = {2012-07-04},
-  date = {2012-05-15},
-  pmid = {22560298}
-}
-</pre>
-</div>
-
-
-
-<li>DOI: <a href="https://dx.doi.org/10.1016/j.devcel.2012.04.004">10.1016/j.devcel.2012.04.004</a></li>
-
-</ul>
-<br />
-
-</div>
-</li></ol>
-
 <h4 id="preprints">Preprints</h4>
 
-<ol class="bibliography"><li><span id="wagner_accurate_2019">Wagner, F., Barkley, D., &amp; Yanai, I. (2019). Accurate denoising of single-cell RNA-Seq data using unbiased principal component analysis. <i>BioRxiv</i>, 655365. https://doi.org/10.1101/655365</span>
+<ol class="bibliography"><li><span id="wagner_monet_2020">Wagner, F. (2020). Monet: An open-source Python package for analyzing and integrating scRNA-Seq data using PCA-based latent spaces. <i>BioRxiv</i>. https://doi.org/10.1101/2020.06.08.140673</span>
+
+<script type="text/javascript">
+function toggleDiv(id) {
+	var div = document.getElementById(id);
+	div.style.display = div.style.display == "none" ? "block" : "none";
+}
+</script>
+
+<div id="wagner_monet_2020-materials">
+<ul class="nav nav-pills">
+
+<li><a data-toggle="collapse" href="javascript:toggleDiv('wagner_monet_2020-bibtex')">BibTeX</a></li>
+<div id="wagner_monet_2020-bibtex" style="display:none;">
+<pre class="collapse">@article{wagner_monet_2020,
+  title = {Monet: {An} open-source {Python} package for analyzing and integrating {scRNA}-{Seq} data using {PCA}-based latent spaces},
+  url = {https://www.biorxiv.org/content/early/2020/06/10/2020.06.08.140673},
+  doi = {10.1101/2020.06.08.140673},
+  journal = {bioRxiv},
+  author = {Wagner, Florian},
+  year = {2020},
+  note = {Publisher: Cold Spring Harbor Laboratory
+  \_eprint: https://www.biorxiv.org/content/early/2020/06/10/2020.06.08.140673.full.pdf}
+}
+</pre>
+</div>
+
+
+
+<li>DOI: <a href="https://dx.doi.org/10.1101/2020.06.08.140673">10.1101/2020.06.08.140673</a></li>
+
+</ul>
+<br />
+
+</div>
+</li>
+<li><span id="wagner_straightforward_2020">Wagner, F. (2020). Straightforward clustering of single-cell RNA-Seq data with t-SNE and DBSCAN. <i>BioRxiv</i>, 770388. https://doi.org/10.1101/770388</span>
+
+<script type="text/javascript">
+function toggleDiv(id) {
+	var div = document.getElementById(id);
+	div.style.display = div.style.display == "none" ? "block" : "none";
+}
+</script>
+
+<div id="wagner_straightforward_2020-materials">
+<ul class="nav nav-pills">
+
+<li><a data-toggle="collapse" href="javascript:toggleDiv('wagner_straightforward_2020-bibtex')">BibTeX</a></li>
+<div id="wagner_straightforward_2020-bibtex" style="display:none;">
+<pre class="collapse">@article{wagner_straightforward_2020,
+  title = {Straightforward clustering of single-cell {RNA}-{Seq} data with t-{SNE} and {DBSCAN}},
+  copyright = {© 2020, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution 4.0 International), CC BY 4.0, as described at http://creativecommons.org/licenses/by/4.0/},
+  url = {https://www.biorxiv.org/content/10.1101/770388v3},
+  doi = {10.1101/770388},
+  language = {en},
+  urldate = {2020-06-05},
+  journal = {bioRxiv},
+  author = {Wagner, Florian},
+  month = apr,
+  year = {2020},
+  note = {Publisher: Cold Spring Harbor Laboratory
+  Section: New Results},
+  pages = {770388}
+}
+</pre>
+</div>
+
+
+
+<li>DOI: <a href="https://dx.doi.org/10.1101/770388">10.1101/770388</a></li>
+
+</ul>
+<br />
+
+</div>
+</li>
+<li><span id="wagner_accurate_2019">Wagner, F., Barkley, D., &amp; Yanai, I. (2019). Accurate denoising of single-cell RNA-Seq data using unbiased principal component analysis. <i>BioRxiv</i>, 655365. https://doi.org/10.1101/655365</span>
 
 <script type="text/javascript">
 function toggleDiv(id) {
@@ -486,6 +439,212 @@ function toggleDiv(id) {
 </div>
 </li></ol>
 
+<h4 id="peer-reviewed-research">Peer-reviewed research</h4>
+
+<ol class="bibliography"><li><span id="moncada_integrating_2020">Moncada, R., Barkley, D., Wagner, F., Chiodin, M., Devlin, J. C., Baron, M., … Yanai, I. (2020). Integrating microarray-based spatial transcriptomics and single-cell RNA-seq reveals tissue architecture in pancreatic ductal adenocarcinomas. <i>Nature Biotechnology</i>, <i>38</i>(3), 333–342. https://doi.org/10.1038/s41587-019-0392-8</span>
+
+<script type="text/javascript">
+function toggleDiv(id) {
+	var div = document.getElementById(id);
+	div.style.display = div.style.display == "none" ? "block" : "none";
+}
+</script>
+
+<div id="moncada_integrating_2020-materials">
+<ul class="nav nav-pills">
+
+<li><a data-toggle="collapse" href="javascript:toggleDiv('moncada_integrating_2020-bibtex')">BibTeX</a></li>
+<div id="moncada_integrating_2020-bibtex" style="display:none;">
+<pre class="collapse">@article{moncada_integrating_2020,
+  title = {Integrating microarray-based spatial transcriptomics and single-cell {RNA}-seq reveals tissue architecture in pancreatic ductal adenocarcinomas},
+  volume = {38},
+  issn = {1546-1696},
+  doi = {10.1038/s41587-019-0392-8},
+  language = {eng},
+  number = {3},
+  journal = {Nature Biotechnology},
+  author = {Moncada, Reuben and Barkley, Dalia and Wagner, Florian and Chiodin, Marta and Devlin, Joseph C. and Baron, Maayan and Hajdu, Cristina H. and Simeone, Diane M. and Yanai, Itai},
+  year = {2020},
+  pmid = {31932730},
+  keywords = {Carcinoma, Pancreatic Ductal, Dendritic Cells, Gene Expression Profiling, Gene Expression Regulation, Neoplastic, Gene Regulatory Networks, Humans, Macrophages, Oligonucleotide Array Sequence Analysis, Pancreatectomy, Pancreatic Neoplasms, Sequence Analysis, RNA, Single-Cell Analysis, Spatio-Temporal Analysis},
+  pages = {333--342}
+}
+</pre>
+</div>
+
+
+
+<li>DOI: <a href="https://dx.doi.org/10.1038/s41587-019-0392-8">10.1038/s41587-019-0392-8</a></li>
+
+</ul>
+<br />
+
+</div>
+</li>
+<li><span id="xia_widespread_2020">Xia, B., Yan, Y., Baron, M., Wagner, F., Barkley, D., Chiodin, M., … Yanai, I. (2020). Widespread Transcriptional Scanning in the Testis Modulates Gene Evolution Rates. <i>Cell</i>, <i>180</i>(2), 248–262.e21. https://doi.org/10.1016/j.cell.2019.12.015</span>
+
+<script type="text/javascript">
+function toggleDiv(id) {
+	var div = document.getElementById(id);
+	div.style.display = div.style.display == "none" ? "block" : "none";
+}
+</script>
+
+<div id="xia_widespread_2020-materials">
+<ul class="nav nav-pills">
+
+<li><a data-toggle="collapse" href="javascript:toggleDiv('xia_widespread_2020-bibtex')">BibTeX</a></li>
+<div id="xia_widespread_2020-bibtex" style="display:none;">
+<pre class="collapse">@article{xia_widespread_2020,
+  title = {Widespread {Transcriptional} {Scanning} in the {Testis} {Modulates} {Gene} {Evolution} {Rates}},
+  volume = {180},
+  issn = {1097-4172},
+  doi = {10.1016/j.cell.2019.12.015},
+  language = {eng},
+  number = {2},
+  journal = {Cell},
+  author = {Xia, Bo and Yan, Yun and Baron, Maayan and Wagner, Florian and Barkley, Dalia and Chiodin, Marta and Kim, Sang Y. and Keefe, David L. and Alukal, Joseph P. and Boeke, Jef D. and Yanai, Itai},
+  year = {2020},
+  pmid = {31978344},
+  keywords = {Adult, Animals, Base Sequence, Gene Expression, Gene Expression Profiling, Germ Cells, Germ-Line Mutation, Humans, Male, Mice, Mice, Inbred C57BL, Middle Aged, Mutation Rate, Spermatogenesis, Testis, Transcription, Genetic, Transcriptome},
+  pages = {248--262.e21}
+}
+</pre>
+</div>
+
+
+
+<li>DOI: <a href="https://dx.doi.org/10.1016/j.cell.2019.12.015">10.1016/j.cell.2019.12.015</a></li>
+
+</ul>
+<br />
+
+</div>
+</li>
+<li><span id="wagner_go-pca:_2015">Wagner, F. (2015). GO-PCA: An Unsupervised Method to Explore Gene Expression Data Using Prior Knowledge. <i>PloS One</i>, <i>10</i>(11), e0143196. https://doi.org/10.1371/journal.pone.0143196</span>
+
+<script type="text/javascript">
+function toggleDiv(id) {
+	var div = document.getElementById(id);
+	div.style.display = div.style.display == "none" ? "block" : "none";
+}
+</script>
+
+<div id="wagner_go-pca:_2015-materials">
+<ul class="nav nav-pills">
+
+<li><a data-toggle="collapse" href="javascript:toggleDiv('wagner_go-pca:_2015-bibtex')">BibTeX</a></li>
+<div id="wagner_go-pca:_2015-bibtex" style="display:none;">
+<pre class="collapse">@article{wagner_go-pca:_2015,
+  title = {{GO}-{PCA}: An Unsupervised Method to Explore Gene Expression Data Using Prior Knowledge},
+  volume = {10},
+  issn = {1932-6203},
+  doi = {10.1371/journal.pone.0143196},
+  shorttitle = {{GO}-{PCA}},
+  pages = {e0143196},
+  number = {11},
+  journaltitle = {{PloS} One},
+  shortjournal = {{PLoS} {ONE}},
+  author = {Wagner, Florian},
+  date = {2015},
+  pmid = {26575370}
+}
+</pre>
+</div>
+
+
+
+<li>DOI: <a href="https://dx.doi.org/10.1371/journal.pone.0143196">10.1371/journal.pone.0143196</a></li>
+
+</ul>
+<br />
+
+</div>
+</li>
+<li><span id="hashimshony_cel-seq:_2012">Hashimshony, T., Wagner, F., Sher, N., &amp; Yanai, I. (2012). CEL-Seq: single-cell RNA-Seq by multiplexed linear amplification. <i>Cell Reports</i>, <i>2</i>(3), 666–673. https://doi.org/10.1016/j.celrep.2012.08.003</span>
+
+<script type="text/javascript">
+function toggleDiv(id) {
+	var div = document.getElementById(id);
+	div.style.display = div.style.display == "none" ? "block" : "none";
+}
+</script>
+
+<div id="hashimshony_cel-seq:_2012-materials">
+<ul class="nav nav-pills">
+
+<li><a data-toggle="collapse" href="javascript:toggleDiv('hashimshony_cel-seq:_2012-bibtex')">BibTeX</a></li>
+<div id="hashimshony_cel-seq:_2012-bibtex" style="display:none;">
+<pre class="collapse">@article{hashimshony_cel-seq:_2012,
+  title = {{CEL}-Seq: single-cell {RNA}-Seq by multiplexed linear amplification},
+  volume = {2},
+  issn = {2211-1247},
+  url = {http://www.ncbi.nlm.nih.gov/pubmed/22939981},
+  doi = {10.1016/j.celrep.2012.08.003},
+  shorttitle = {{CEL}-Seq},
+  pages = {666--673},
+  number = {3},
+  journaltitle = {Cell Reports},
+  shortjournal = {Cell Rep},
+  author = {Hashimshony, Tamar and Wagner, Florian and Sher, Noa and Yanai, Itai},
+  date = {2012-09-27},
+  pmid = {22939981},
+  keywords = {Reverse Transcriptase Polymerase Chain Reaction, {RNA}, Messenger, Sequence Analysis, {DNA}, Gene Expression Regulation, Caenorhabditis elegans, Multiplex Polymerase Chain Reaction, Animals, {RNA}, Helminth}
+}
+</pre>
+</div>
+
+
+
+<li>DOI: <a href="https://dx.doi.org/10.1016/j.celrep.2012.08.003">10.1016/j.celrep.2012.08.003</a></li>
+
+</ul>
+<br />
+
+</div>
+</li>
+<li><span id="levin_developmental_2012">Levin, M., Hashimshony, T., Wagner, F., &amp; Yanai, I. (2012). Developmental milestones punctuate gene expression in the Caenorhabditis embryo. <i>Developmental Cell</i>, <i>22</i>(5), 1101–1108. https://doi.org/10.1016/j.devcel.2012.04.004</span>
+
+<script type="text/javascript">
+function toggleDiv(id) {
+	var div = document.getElementById(id);
+	div.style.display = div.style.display == "none" ? "block" : "none";
+}
+</script>
+
+<div id="levin_developmental_2012-materials">
+<ul class="nav nav-pills">
+
+<li><a data-toggle="collapse" href="javascript:toggleDiv('levin_developmental_2012-bibtex')">BibTeX</a></li>
+<div id="levin_developmental_2012-bibtex" style="display:none;">
+<pre class="collapse">@article{levin_developmental_2012,
+  title = {Developmental milestones punctuate gene expression in the Caenorhabditis embryo},
+  volume = {22},
+  issn = {1878-1551},
+  url = {http://www.ncbi.nlm.nih.gov/pubmed/22560298},
+  doi = {10.1016/j.devcel.2012.04.004},
+  pages = {1101--1108},
+  number = {5},
+  journaltitle = {Developmental cell},
+  shortjournal = {Dev. Cell},
+  author = {Levin, Michal and Hashimshony, Tamar and Wagner, Florian and Yanai, Itai},
+  urldate = {2012-07-04},
+  date = {2012-05-15},
+  pmid = {22560298}
+}
+</pre>
+</div>
+
+
+
+<li>DOI: <a href="https://dx.doi.org/10.1016/j.devcel.2012.04.004">10.1016/j.devcel.2012.04.004</a></li>
+
+</ul>
+<br />
+
+</div>
+</li></ol>
+
 
   </div>
 </article>
@@ -496,7 +655,7 @@ function toggleDiv(id) {
       <div class="container">
         <footer class="footer">
           
-<a href="mailto:florian.wagner@nyu.edu"><i class="svg-icon email"></i></a>
+<a href="mailto:florian.wagner@uchicago.edu"><i class="svg-icon email"></i></a>
 
 
 <a href="https://github.com/flo-compbio"><i class="svg-icon github"></i></a>

@@ -1,3 +1,32 @@
+@article{wagner_monet_2020,
+	title = {Monet: {An} open-source {Python} package for analyzing and integrating {scRNA}-{Seq} data using {PCA}-based latent spaces},
+	url = {https://www.biorxiv.org/content/early/2020/06/10/2020.06.08.140673},
+	doi = {10.1101/2020.06.08.140673},
+	abstract = {Single-cell RNA-Seq is a powerful technology that enables the transcriptomic profiling of the different cell populations that make up complex tissues. However, the noisy and high-dimensional nature of the generated data poses significant challenges for its analysis and integration. Here, I describe Monet, an open-source Python package designed to provide effective and computationally efficient solutions to some of the most common challenges encountered in scRNA-Seq data analysis, and to serve as a toolkit for scRNA-Seq method development. At its core, Monet implements algorithms to infer the dimensionality and construct a PCA-based latent space from a given dataset. This latent space, represented by a MonetModel object, then forms the basis for data analysis and integration. In addition to validating these core algorithms, I provide demonstrations of some more advanced analysis tasks currently supported, such as batch correction and label transfer, which are useful for analyzing multiple datasets from the same tissue. Monet is available at https://github.com/flo-compbio/monet. Ongoing work is focused on providing electronic notebooks with tutorials for individual analysis tasks, and on developing interoperability with other Python scRNA-Seq software. The author welcomes suggestions for future improvements.Competing Interest StatementThe authors have declared no competing interest.},
+	journal = {bioRxiv},
+	author = {Wagner, Florian},
+	year = {2020},
+	note = {Publisher: Cold Spring Harbor Laboratory
+\_eprint: https://www.biorxiv.org/content/early/2020/06/10/2020.06.08.140673.full.pdf}
+}
+
+@article{wagner_straightforward_2020,
+	title = {Straightforward clustering of single-cell {RNA}-{Seq} data with t-{SNE} and {DBSCAN}},
+	copyright = {© 2020, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution 4.0 International), CC BY 4.0, as described at http://creativecommons.org/licenses/by/4.0/},
+	url = {https://www.biorxiv.org/content/10.1101/770388v3},
+	doi = {10.1101/770388},
+	abstract = {{\textless}h3{\textgreater}Abstract{\textless}/h3{\textgreater} {\textless}p{\textgreater}Clustering of cells by cell type is arguably the most common and repetitive task encountered during the analysis of single-cell RNA-Seq data. However, as popular clustering methods operate largely independently of visualization techniques, the fine-tuning of clustering parameters can be unintuitive and time-consuming. Here, I propose \textit{Galapagos}, a simple and effective clustering workflow based on t-SNE and DBSCAN that does not require a gene selection step. In practice, Galapagos only involves the fine-tuning of two parameters, which is straightforward, as clustering is performed directly on the t-SNE visualization results. Using peripheral blood mononuclear cells as a model tissue, I validate the effectiveness of Galapagos in different ways. First, I show that Galapagos generates clusters corresponding to all main cell types present. Then, I demonstrate that the t-SNE results are robust to parameter choices and initialization points. Next, I employ a simulation approach to show that clustering with Galapagos is accurate and robust to the high levels of technical noise present. Finally, to demonstrate Galapagos’ accuracy on real data, I compare clustering results to true cell type identities established using CITE-Seq data. In this context, I also provide an example of the primary limitation of Galapagos, namely the difficulty to resolve related cell types in cases where t-SNE fails to clearly separate the cells. Galapagos helps to make clustering scRNA-Seq data more intuitive and reproducible, and can be implemented in most programming languages with only a few lines of code.{\textless}/p{\textgreater}},
+	language = {en},
+	urldate = {2020-06-05},
+	journal = {bioRxiv},
+	author = {Wagner, Florian},
+	month = apr,
+	year = {2020},
+	note = {Publisher: Cold Spring Harbor Laboratory
+Section: New Results},
+	pages = {770388},
+}
+
 @article{wagner_accurate_2019,
 	title = {Accurate denoising of single-cell {RNA}-{Seq} data using unbiased principal component analysis},
 	copyright = {© 2019, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution 4.0 International), CC BY 4.0, as described at http://creativecommons.org/licenses/by/4.0/},
