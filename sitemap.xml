@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://florianwagner.eu/2017/11/29/separating-the-signal-and-the-noise-in-scRNA-Seq-data.html</loc>
+<loc>http://localhost:4000/2017/11/29/separating-the-signal-and-the-noise-in-scRNA-Seq-data.html</loc>
 <lastmod>2017-11-29T06:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://florianwagner.eu/404</loc>
+<loc>http://localhost:4000/404</loc>
 </url>
 <url>
-<loc>https://florianwagner.eu/</loc>
+<loc>http://localhost:4000/</loc>
 </url>
 <url>
-<loc>https://florianwagner.eu/blog/</loc>
+<loc>http://localhost:4000/blog/</loc>
 </url>
 <url>
-<loc>https://florianwagner.eu/videos/</loc>
+<loc>http://localhost:4000/videos/</loc>
 </url>
 </urlset>
